@@ -55,7 +55,7 @@ public class VirtualPet {
             happiness = happiness + 3;
             hunger = hunger + 2;
             energy = energy - 2;
-            System.out.println("Yayyy, Mokun loves to play");
+            System.out.println("Yayyy, Mokun loves to play with himself");
             }
           else if (choice==3) {
             happiness = happiness - 1;
