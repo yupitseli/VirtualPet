@@ -21,12 +21,12 @@ public class VirtualPet {
       // hunger < 10
       // energy > 0
       // choice != 5
-      while (happiness < 15 && hunger < 10 && energy > 0){
+      while (happiness < 15 && hunger < 10 && energy > 0) {
          // TODO 2:
          // Display happiness, hunger, and energy.
-         System.out.println("Mokun's happiness is at" + happiness);
-         System.out.println("Mokun's hunger is at" + hunger);
-         System.out.println("Mokun's energy is at" + energy);
+         System.out.println("Mokun's happiness is at " + happiness);
+         System.out.println("Mokun's hunger is at " + hunger);
+         System.out.println("Mokun's energy is at " + energy);
         
          
          System.out.println("What would you like to do?");
@@ -46,7 +46,7 @@ public class VirtualPet {
          // to the table in the instructions.
          //
          // Print a funny message for each action.
-         if (choice==1){
+         if (choice==1) {
             happiness++;
             hunger= hunger - 1;
             System.out.println("Mmmm, yum yum, Mokun loves tasty goy slop");
@@ -61,7 +61,7 @@ public class VirtualPet {
             happiness = happiness - 1;
             hunger = hunger + 1;
             energy = energy + 3;
-            System.out.println("Shhhh, Mokun is dreaming");  
+            System.out.println("Awwww, Mokun is so cute when he's dreaming");  
             }
           else if (choice==4) {
             happiness = happiness + 2;
@@ -70,9 +70,26 @@ public class VirtualPet {
              System.out.println("Splish! Splash! Mokun loves having fun in the tub and getting squeaky clean");
             }
           else {
-          System.out.println("You killed Mokun cause you didn't have strong enough willpower, pathetic *spits");
+          System.out.println("Yeah, I wouldn't want to play a game with Mokun either");
+          hunger = 10;
+          energy = 0;
           }
-
+      }
+       if(hunger==10 && energy==0) {
+       System.out.println("You ended the Mokun Game");
+       }
+       else if(hunger>=10) {
+       System.out.println("Mokun's hunger is at " + hunger);
+       System.out.println("Mokun has starved to death, you lose");
+       }
+       else if(energy<=0) {
+       System.out.println("Mokun's energy is at " + energy);
+       System.out.println("Mokun lost all of his energy and died in your arms, you lose");
+       }
+       else if(happiness>=15) {
+       System.out.println("Mokun's happiness is at " + happiness);
+       System.out.println("Mokun is happy * infinity, you win");
+       }
 
 
       // TODO 4:
