@@ -49,25 +49,25 @@ public class VirtualPet {
          if (choice==1) {
             happiness++;
             hunger= hunger - 1;
-            System.out.println("Mmmm, yum yum, Mokun loves tasty goy slop");
+            System.out.println("Mmmm, yum yum, Mokun loves tasty goy slop, what a good boy");
             }
           else if (choice==2) {
             happiness = happiness + 3;
             hunger = hunger + 2;
             energy = energy - 2;
-            System.out.println("Yayyy, Mokun loves to play with himself");
+            System.out.println("Yayyy, Mokun loves to play, what a good boy");
             }
           else if (choice==3) {
             happiness = happiness - 1;
             hunger = hunger + 1;
             energy = energy + 3;
-            System.out.println("Awwww, Mokun is so cute when he's dreaming");  
+            System.out.println("Awwww, Mokun is so cute when he's dreaming, what a good boy");  
             }
           else if (choice==4) {
             happiness = happiness + 2;
             hunger = hunger + 1;
             energy = energy -1;
-             System.out.println("Splish! Splash! Mokun loves having fun in the tub and getting squeaky clean");
+             System.out.println("Splish! Splash! Mokun loves having fun in the tub and getting squeaky clean, what a good boy");
             }
           else {
           System.out.println("Yeah, I wouldn't want to play a game with Mokun either");
